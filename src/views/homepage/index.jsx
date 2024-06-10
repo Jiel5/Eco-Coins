@@ -1,5 +1,7 @@
-import  { useState } from "react";
+import { useState } from "react";
 import HeroImage from "../../assets/img/hero/hero.jpg";
+import Logo1 from "../../assets/svg/logo1.svg";
+
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +16,9 @@ function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between py-6">
               <div className="flex items-center">
+                <div className="flex-shrink-0 px-4">
+                  <img src={Logo1} alt="Eco Coins Logo" className="h-10" />
+                </div>
                 <div className="flex-shrink-0">
                   <a href="#beranda" className="text-white text-3xl font-bold">
                     Eco Coins
